@@ -10,16 +10,24 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.google.com/specimen/Overpass');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    .card {text-align: center;
+    body {
+      font-family: 'Overpass', sans-serif;
+    }
+    .card {
     padding: 20px;
     background-color: hsl(213, 19%, 18%);
     color: white;
+    border-radius: 15px;
+    width: 300px;
     }
     .container {
     background-color: hsl(216, 12%, 8%);
     padding: 20px;
+    display: flex;
+    justify-content: center;
     }
   </style>
 </head>
@@ -29,14 +37,14 @@
 <div class="container">
 
   <div class="card">
-    How did we do?
+    <h3>How did we do?</h3>
 
     Please let us know how we did with your support request. All feedback is appreciated
     to help us improve our offering!
 
     1 2 3 4 5
 
-    Submit
+    <button class="submit">Submit</button>
   </div>
 </div>
 <br>
