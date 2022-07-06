@@ -36,8 +36,8 @@
       margin: 8px;
       justify-content: center;
     }
-    .rating #disabled{
-background-color: black;
+    .rating + #enabled{
+      background-color: black;
     }
     .submit {
       background-color: hsl(25, 97%, 53%);
@@ -51,7 +51,8 @@ background-color: black;
   <script>
     document.addEventListener("click", myFunction);
     function myFunction() {
-      document.getElementById("disabled").innerHTML = "id='enabled'";
+      // document.getElementById("enabled").setAttribute('id','disabled');
+      document.getElementById("disabled").setAttribute('id','enabled');
     }
   </script>
 </head>
