@@ -18,18 +18,24 @@
     }
     .card {
     padding: 20px;
-    background-color: hsl(213, 19%, 18%);
+    background-color: rgb(30,37,47);
     color: white;
     border-radius: 15px;
-    width: 300px;
+    width: 300px;s
     }
     .container {
-    background-color: hsl(216, 12%, 8%);
+    background-color: rgb(20,21,25);
     padding: 20px;
     display: flex;
     justify-content: center;
     }
+    p {
+      color: rgb(116,124,136);
+      font-size: small;
+    }
     .rating {
+      background-color: rgb(38,47,56);
+      color: rgb(116,124,136);
       border-radius: 50%;
       height: 35px;
       width: 35px;
@@ -41,7 +47,7 @@
       background-color: hsl(25, 97%, 53%);
     }
     .rating + #enabled{
-      background-color: black;
+      background-color: hsl(217, 12%, 63%);
     }
     .submit {
       background-color: hsl(25, 97%, 53%);
@@ -50,6 +56,10 @@
       padding: 10px 120px;
       border-radius: 20px;
       margin: 10px;
+    }
+    .submit:hover {
+      background-color: white;
+      color: hsl(25, 97%, 53%);
     }
   </style>
   <script>
@@ -68,8 +78,10 @@
   <div class="card">
     <h3>How did we do?</h3>
 
-    Please let us know how we did with your support request. All feedback is appreciated
-    to help us improve our offering!
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
 <br>
     <button class="rating" id="disabled"> 1 </button>
     <button class="rating" id="disabled"> 2 </button>
